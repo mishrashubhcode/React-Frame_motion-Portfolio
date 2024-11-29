@@ -39,7 +39,7 @@ This is a personal portfolio showcasing my skills, projects, and professional ex
 
 ## Live Demo
 
-Check out the live portfolio [here](https://your-portfolio-live-link.com).
+Check out the live portfolio [here](https://shubham-protfolio-chi.vercel.app/).
 
 ---
 
