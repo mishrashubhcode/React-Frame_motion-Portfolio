@@ -1,7 +1,6 @@
 import { EXPERIENCES } from "../constants";
 import { motion } from "framer-motion";
 
-
 const Experience = () => {
     return (
         <div className="border-b border-neutral-900 pb-4">
@@ -29,7 +28,17 @@ const Experience = () => {
                             <h6 className="mb-2 font-semibold">{experience.role} - {" "}
                                 <span className="text-sm text-purple-100">{experience.company}</span>
                             </h6>
-                            <p className="mb-4 text-neutral-400">{experience.description}</p>
+
+                            {/* Convert description to bullet points */}
+                            <div className="mb-4 text-neutral-400">
+                                {experience.achievements.map((achievement, achIndex) => (
+                                    <div key={achIndex} className="flex items-start mb-2">
+                                        <span className="text-purple-400 mr-2 mt-1">•</span>
+                                        <p className="text-sm">{achievement}</p>
+                                    </div>
+                                ))}
+                            </div>
+
                             {experience.technologies.map((tech, index) => (
                                 <span key={index} className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800">{tech}</span>
                             ))}
