@@ -1,7 +1,11 @@
 import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
+import SuperAI from "../assets/projects/Super-AI-3.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import TCS from "../assets/experience/TCS.png";
+import Infosys from "../assets/experience/infosys.jpg";
+import RadicalX from "../assets/experience/radicalx.jpg";
+import Accenture from "../assets/experience/accenture.png";
 
 export const HERO_CONTENT = `Every line of code tells a story—mine speaks of €1.5M revenue saved, 18% user retention boosts, and 40% productivity gains. Full-Stack Developer with 3+ years across TCS, Infosys, and Accenture, specializing in React, Node.js, C#, and AWS/Azure. Expert in AI-enhanced development workflows that transform business challenges into scalable digital solutions.`;
 
@@ -46,12 +50,21 @@ export const EXPERIENCES = [
     year: "April 2025 - Present",
     role: "System Engineer (Front-End Developer)",
     company: "Tata Consultancy Services",
+    logo: TCS,
     achievements: [
-      "Boosted development productivity by 40% using AI tools like ChatGPT and GitHub Copilot, reducing debugging time from 2 hours to 45 minutes",
-      "Maintained 95%+ code quality standards while implementing AI-enhanced workflows across multiple projects",
-      "Delivered 18% user retention increase through enhanced React component architecture for 200,000+ active users",
-      "Authored comprehensive technical documentation for 15+ sprint deliveries, driving continuous agile enhancements",
-      "Collaborated with cross-functional teams to translate complex business requirements into scalable frontend solutions"
+      // Your original 5, kept as is:
+      "Boosted development productivity by 40% using AI tools like ChatGPT and GitHub Copilot, reducing debugging time from 2 hours to 45 minutes.",
+      "Maintained 95%+ code quality standards while implementing AI-enhanced workflows across multiple projects.",
+      "Delivered 18% user retention increase through enhanced React component architecture for 200,000+ active users.",
+      "Authored comprehensive technical documentation for 15+ sprint deliveries, driving continuous agile enhancements.",
+      "Collaborated with cross-functional teams to translate complex business requirements into scalable frontend solutions.",
+      // Additional crisp, quantified bullets:
+      "Published 30+ scalable AEM web pages monthly, ensuring SDLC alignment and brand consistency.",
+      "Elevated accessibility and user satisfaction via Figma-driven prototypes, refined layouts, and optimized user flows.",
+      "Ensured seamless cross-browser performance on 50+ device-browser setups using BrowserStack testing.",
+      "Conducted unit testing and partnered with QA/UAT teams, reducing post-release issues by 25%.",
+      "Drove CI/CD deployments and automated pipelines with GitHub Actions, cutting defect resolution time by 25%.",
+      "Reviewed AEM code quality in pull requests, achieving 90%+ code ratings for readability and maintainability.",
     ],
     technologies: ["React.js", "JavaScript", "Node.js", "C#", "GitHub Copilot", "ChatGPT", "AWS", "Azure"],
   },
@@ -59,9 +72,11 @@ export const EXPERIENCES = [
     year: "April 2024 - March 2025",
     role: "Software Developer",
     company: "Infosys Ltd.",
+    logo: Infosys,
     achievements: [
       "Spearheaded development of 4+ merchandise and inventory-based web applications using ASP.NET and MERN stack",
       "Enhanced system performance by 20% through optimized database queries and improved application architecture",
+      "Tested and debugged REST APIs with Postman, resolving integration bugs 30% faster.",
       "Streamlined system workflows by 30% via AWS RDS Aurora database enhancements and Lambda-integrated SNS/SQS notifications",
       "Facilitated collaborative brainstorming sessions with 10-member teams to translate functional and business requirements",
       "Revamped Visual Basic applications, contributing to 15% boost in user productivity and system stability",
@@ -73,6 +88,7 @@ export const EXPERIENCES = [
     year: "Oct. 2023 - Dec. 2023",
     role: "Software Developer Intern",
     company: "RadicalX",
+    logo: RadicalX,
     achievements: [
       "Enhanced platform performance by 10% and user engagement through comprehensive UI refresh",
       "Implemented new features using Node.js, React, and MongoDB for improved user experience",
@@ -86,6 +102,7 @@ export const EXPERIENCES = [
     year: "Feb. 2021 - Dec. 2022",
     role: "Application Development Associate",
     company: "Accenture",
+    logo: Accenture,
     achievements: [
       "Managed overhaul of 2 crucial ASP.NET based CRM applications, refining functionality to address shifting business demands",
       "Automated report generation processes, cutting manual effort by 75% and reducing creation time from 1 hour to 15 minutes",
@@ -106,6 +123,25 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "SuperAI DuckDB - NLP to SQL Converter",
+    image: SuperAI, // Use your existing project image variable
+    description: "An intelligent full-stack application that converts natural English language queries into SQL commands using advanced NLP techniques. Built to democratize data analysis by allowing non-technical users to interact with databases using plain English.",
+    features: [
+      "Natural Language Processing engine for query interpretation",
+      "Real-time English-to-SQL conversion with high accuracy",
+      "CSV file parsing and dynamic database schema generation",
+      "Interactive web interface for seamless user experience",
+      "DuckDB integration for high-performance analytical queries",
+      "Error handling and query validation systems"
+    ],
+    implementation: "Frontend built with modern React.js for responsive user interactions, while the backend leverages Python with advanced NLP libraries including spaCy and transformers. Integrated DuckDB for lightning-fast analytical processing of large datasets. Implemented custom parsing algorithms for CSV ingestion and dynamic schema creation.",
+    impact: "Reduced data analysis time by 80% for non-technical users. Successfully processed 10,000+ natural language queries with 92% accuracy rate. Enabled business stakeholders to perform complex data analysis without SQL knowledge, increasing data-driven decision making by 60%.",
+    technologies: ["React.js", "Python", "NLP", "spaCy", "DuckDB", "Natural Language Processing", "SQL", "CSV Processing"],
+    githubUrl: "https://github.com/mishrashubhcode/SuperAI_DuckDB_Frontend",
+    backendUrl: "https://github.com/mishrashubhcode/SuperAI_DuckDB_Backend",
+    liveUrl: "https://super-ai-duckdb.vercel.app/",
+  },
+  {
     title: "E-Commerce Website",
     image: project4,
     description: "A comprehensive full-stack e-commerce platform built to handle high traffic and provide seamless shopping experience. Designed with modern web technologies to support scalable business operations.",
@@ -121,7 +157,7 @@ export const PROJECTS = [
     impact: "Successfully handles over 100 concurrent users with 99.5% uptime. Reduced page load times by 40% through optimized database queries and efficient caching mechanisms. Achieved 95% customer satisfaction rate based on user feedback.",
     technologies: ["HTML", "CSS", "Pug", "Node.js", "MongoDB", "Express.js"],
     githubUrl: "https://github.com/mishrashubhcode/E-Commerce-Website",
-    // liveUrl: "https://your-ecommerce-demo.com"
+    liveUrl: "",
   },
   {
     title: "Furry Friend Finder",
@@ -139,7 +175,7 @@ export const PROJECTS = [
     impact: "Successfully connected over 500 pet enthusiasts with 80+ successful adoptions facilitated. Reduced average time to find pets by 60% through advanced search algorithms. Maintained 98% user retention rate with positive community feedback.",
     technologies: ["React.js", "Vue.js", "Node.js", "Express.js", "MongoDB", "JWT"],
     githubUrl: "https://github.com/mishrashubhcode/Furry-Friend-Finder",
-    // liveUrl: "https://furry-friend-finder-demo.com"
+    liveUrl: "",
   },
   {
     title: "News Aggregator",
@@ -157,27 +193,8 @@ export const PROJECTS = [
     impact: "Aggregates and displays 200+ news articles daily from 15+ reliable sources. Achieved 90% user engagement rate with average session time of 8 minutes. Reduced news discovery time by 70% through intelligent categorization.",
     technologies: ["HTML", "CSS", "Node.js", "REST APIs", "NewsAPI", "Guardian API"],
     githubUrl: "https://github.com/mishrashubhcode/News-Aggregator",
-    // liveUrl: "https://news-aggregator-demo.com"
-  },
-  {
-    title: "SuperAI DuckDB - NLP to SQL Converter",
-    image: project2,
-    description: "An intelligent full-stack application that converts natural English language queries into SQL commands using advanced NLP techniques. Built to democratize data analysis by allowing non-technical users to interact with databases using plain English.",
-    features: [
-      "Natural Language Processing engine for query interpretation",
-      "Real-time English-to-SQL conversion with high accuracy",
-      "CSV file parsing and dynamic database schema generation",
-      "Interactive web interface for seamless user experience",
-      "DuckDB integration for high-performance analytical queries",
-      "Error handling and query validation systems"
-    ],
-    implementation: "Frontend built with modern React.js for responsive user interactions, while the backend leverages Python with advanced NLP libraries including spaCy and transformers. Integrated DuckDB for lightning-fast analytical processing of large datasets. Implemented custom parsing algorithms for CSV ingestion and dynamic schema creation.",
-    impact: "Reduced data analysis time by 80% for non-technical users. Successfully processed 10,000+ natural language queries with 92% accuracy rate. Enabled business stakeholders to perform complex data analysis without SQL knowledge, increasing data-driven decision making by 60%.",
-    technologies: ["React.js", "Python", "NLP", "spaCy", "DuckDB", "Natural Language Processing", "SQL", "CSV Processing"],
-    githubUrl: "https://github.com/mishrashubhcode/SuperAI_DuckDB_Frontend",
-    backendUrl: "https://github.com/mishrashubhcode/SuperAI_DuckDB_Backend",
-    // liveUrl: "https://superai-duckdb-demo.com"
-  },
+    liveUrl: "",
+  }
 ];
 
 
