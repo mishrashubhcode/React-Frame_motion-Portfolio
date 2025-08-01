@@ -70,7 +70,7 @@ export const EXPERIENCES = [
   },
   {
     year: "April 2024 - March 2025",
-    role: "Software Developer",
+    role: "Associate Business Analyst",
     company: "Infosys Ltd.",
     logo: Infosys,
     achievements: [
